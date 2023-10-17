@@ -1,0 +1,9 @@
+version: '3'
+services:
+  alpine-sona:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+        - ./:/app/bot
+      # - path du dossier sur ton pc à partir de là ou est ce fichier:/app/bot
